@@ -167,22 +167,22 @@ header nav ul li a:hover {
 
 .item-notebook-img {
     display: flex;
-    width: 249px;
-    height: 365px;
+    width: 284px;
+    height: 415px;
     background-image: url(../../public/images/notebooks.png);
 }
 
 .item-pccompleta-img {
     display: flex;
-    width: 249px;
-    height: 365px;
+    width: 284px;
+    height: 415px;
     background-image: url(../../public/images/pccompletas.png);
 }
 
 .item-gamer-img {
     display: flex;
-    width: 249px;
-    height: 365px;
+    width: 284px;
+    height: 415px;
     background-image: url(../../public/images/gamer.png);
 }
 
@@ -214,7 +214,6 @@ header nav ul li a:hover {
 
 .container-notebooks-index {
     display: flex;
-    height: 365px;
     margin: 20px 50px;
     background-color: #f2f2f2;
 }
