@@ -8,95 +8,93 @@
     box-sizing: border-box;
 }
 
-/*Menu NAV*/
-header {
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    color: white;
+/* NAV BAR */
+.logo-web {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.navbar {
     border: solid 4px;
     border-image-slice: 1;
+    border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-top: 0;
     border-image-source: linear-gradient(to left, #8cc800, #59ffe3);
 }
 
-header h2 {
-    font-family: 'Rubik', sans-serif;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 50px;
+.nav-link {
+    color: #fff;
 }
 
-header nav ul {
-    background-color: black;
-    display: flex;
-    justify-content: flex-end;
+.menu-desplegable {
+    color: #fff;
 }
 
-header nav ul li {
-    display: flex;
-
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    padding: 20px 20px;
-}
-
-header nav ul li a:hover {
-    background-color: #42b881;
-}
-
-/*Buscador*/
-.search-bar {
-    display: flex;
-    align-items: center;
-    width: 350px;
-    border: none;
-}
-
-.search-bar input[type="text"] {
-    flex: 1;
-    padding: 10px;
-    font-size: 17px;
-    border: none;
-    outline: none;
-}
-
-.search-bar button[type="submit"] {
-    background-color: #f2f2f2;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.fa-search {
-    font-size: 18px;
+.menu-desplegable:hover {
+    opacity: 0.7;
 }
 
 /*carrito*/
-.cart {
+.carrito {
     font-size: 16px;
     display: flex;
     align-items: center;
     margin-left: 10px;
     margin-right: 20px;
+    color: #fff;
 }
 
-.cart {
+.carrito {
     transition: transform 0.2s ease-in-out;
 }
 
-.cart:hover {
+.carrito:hover {
     transform: scale(1.2);
     cursor: pointer;
+}
+
+/* login */
+.login {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.login:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Barra - Buscador*/
+.buscador {
+    width: 650px;
+}
+
+/* Boton de Buscar (lupa) */
+.btn-search {
+    color: #fff;
+    border: none;
+    border: 1px solid #fff;
+    opacity: 1;
+}
+
+.btn-search:hover {
+    background-color: transparent;
+    opacity: 0.9;
+    border-color: #fff;
+}
+.btn-search:active, .btn-search:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: transparent !important;
+    border-color: #fff !important;
 }
 
 /*slider animacion*/
