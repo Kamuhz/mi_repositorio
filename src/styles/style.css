@@ -97,7 +97,7 @@
     margin-left: 10px;
 }
 
-/* media querie para buscador mobile */
+/* media queries*/
 
 @media (max-width: 767px) {
     .search-container {
