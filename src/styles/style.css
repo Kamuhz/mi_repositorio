@@ -37,7 +37,7 @@
 
 /*carrito*/
 .carrito {
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     margin-right: 20px;
@@ -117,9 +117,6 @@
         text-decoration: none;
         font-size: 15px;
     }
-    .icons-container a i {
-        margin-right: 4px;
-    }
     .buscador {
         flex-direction: row;
         align-items: flex-start;
@@ -138,6 +135,9 @@
     }
     .navbar-toggler {
         margin-left: auto;
+    }
+    .carrito {
+        font-size: 14px;
     }
 }
 
