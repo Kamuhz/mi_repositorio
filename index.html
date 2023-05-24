@@ -14,54 +14,61 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-black">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <a class="navbar-brand logo-web" href="#">GP Computación</a>
-                    </div>
-                    <div class="col text-end">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
+              <div class="row">
+                <div class="col-auto">
+                  <a class="navbar-brand logo-web" href="#">GP Computación</a>
                 </div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./src/pages/pccompletas.html">PC Armadas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./src/pages/notebooks.html">Notebooks</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle menu-desplegable" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Componentes
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./src/pages/monitores.html">Monitores</a></li>
-                                <li><a class="dropdown-item" href="./src/pages/gpus.html">Placas de Video</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./src/pages/contact.html">Contacto</a>
-                        </li>    
+                <div class="col text-end">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./src/pages/pccompletas.html">PC Armadas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./src/pages/notebooks.html">Notebooks</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle menu-desplegable" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Componentes
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./src/pages/monitores.html">Monitores</a></li>
+                      <li><a class="dropdown-item" href="./src/pages/gpus.html">Placas de Video</a></li>
                     </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./src/pages/contact.html">Contacto</a>
+                  </li>    
+                </ul>
                 <form class="d-flex mx-auto buscador" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-search btn-outline-success" type="submit">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-search btn-outline-success" type="submit">
                     <i class="fas fa-search"></i>
-                    </button>
+                  </button>
                 </form>
+                <div class="login">
+                  <a href="#">
+                    <i class="fas fa-user"></i>
+                    <span class="d-lg-none texto-iconos">Ingresar</span>
+                  </a>
+                </div>
+                <div class="carrito">
+                  <a href="#">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    <span class="d-lg-none texto-iconos">Carrito de Compras</span>
+                  </a>
+                </div>
+              </div>
             </div>
-            <a class="login" href="#">
-                <i class="fas fa-user"></i>
-            </a>
-            <div class="carrito">
-                <i class="fa fa-shopping-cart fa-lg"></i>
-            </div>
-        </nav>
+          </nav>
     </header>
     <!--Slider--> 
     <section class="slider-frame">
