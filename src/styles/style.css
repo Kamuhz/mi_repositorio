@@ -40,8 +40,11 @@
     font-size: 16px;
     display: flex;
     align-items: center;
-    margin-left: 10px;
     margin-right: 20px;
+    color: #fff;
+}
+
+.carrito i {
     color: #fff;
 }
 
@@ -59,11 +62,18 @@
     font-size: 20px;
     display: flex;
     align-items: center;
-    margin-left: 10px;
     margin-right: 20px;
     color: #fff;
     text-decoration: none;
     transition: transform 0.2s ease-in-out;
+}
+
+.login i {
+    color: #fff;
+}
+
+.login a, .carrito a {
+    text-decoration: none;
 }
 
 .login:hover {
@@ -74,10 +84,65 @@
 
 /* Barra - Buscador*/
 .buscador {
+    display: flex;
+    align-items: center;
     width: 650px;
 }
 
+.buscador input[type="search"] {
+    flex-grow: 1;
+}
+
+.buscador .btn-search {
+    margin-left: 10px;
+}
+
+/* media queries*/
+
+@media (max-width: 767px) {
+    .search-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: auto;
+    }
+    .icons-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+    .texto-iconos {
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .buscador {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .buscador input[type="search"] {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 4px;
+    }
+    .carrito:hover {
+        transform: scale(1);
+        cursor: pointer;
+    }
+    .login:hover {
+        transform: scale(1);
+    }
+    .navbar-toggler {
+        margin-left: auto;
+    }
+    .carrito {
+        font-size: 14px;
+    }
+}
+
 /* Boton de Buscar (lupa) */
+
 .btn-search {
     color: #fff;
     border: none;
