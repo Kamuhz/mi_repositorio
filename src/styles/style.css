@@ -99,7 +99,7 @@
 
 /* media queries*/
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
     .search-container {
         display: flex;
         flex-direction: column;
@@ -138,6 +138,20 @@
     }
     .carrito {
         font-size: 14px;
+    }
+    .boton-hamburgesa {
+        display: flex;
+        position: absolute;
+    }
+    .footer-container {
+        font-size: 13px;
+    }
+    .menu-item-footer {
+        padding-right: 15px;
+    }
+    .footer-img {
+        display: flex;
+        margin: 25px;
     }
 }
 
@@ -562,6 +576,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .footer-content-container {
