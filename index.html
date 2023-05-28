@@ -80,41 +80,61 @@
     </section>
     <main>
         <!--slider de marcas-->
-        <section class="cont-cont">
-            <H1 class="title-marcas">¡Las Mejores Marcas!</H1>
-            <div class="container-marcas">
-                <div class="item-marcas">
-                    <figure class="logo-marca">
-                        <img src="./public/images/razer.jpg" alt="razer">
-                    </figure>
-                    <h2 class="marca">RAZER</h2>
+        <section class="marcas-section">
+            <h2 class="best-marcas">Las Mejores Marcas!</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <img src="./public/images/razer.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title">RAZER</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="./public/images/redragon.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title">RED DRAGON</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="./public/images/tdagger.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title">T-DAGGER</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="./public/images/vsg.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title">VSG</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="./public/images/logitech.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title">LOGITECH</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="item-marcas">
-                    <figure class="logo-marca">
-                        <img src="./public/images/logitech.jpg" alt="razer">
-                    </figure>
-                    <h2 class="marca">LOGITECH</h2>
-                </div>
-                <div class="item-marcas">
-                    <figure class="logo-marca">
-                        <img src="./public/images/vsg.jpg" alt="razer">
-                    </figure>
-                    <h2 class="marca">VSG</h2>
-                </div>
-                <div class="item-marcas">
-                    <figure class="logo-marca">
-                        <img src="./public/images/redragon.jpg" alt="razer">
-                    </figure>
-                    <h2 class="marca">REDRAGON</h2>
-                </div>
-                <div class="item-marcas">
-                    <figure class="logo-marca">
-                        <img src="./public/images/tdagger.jpg" alt="razer">
-                    </figure>
-                    <h2 class="marca">T-DAGGER</h2>
-                </div>
-            </div>
-            <hr> <!--Barra divisoria-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </section>
             <!--banner-->
             <div class="banner">
                 <img src="./public/images/banner-empresas-home.jpg" alt="">
@@ -212,7 +232,7 @@
                 </div>
             </div>
             <!--Productos-->
-            <h2 class="titles-products">Productos más elejidos por nuestros clientes</h2>
+            <h2 class="titles-products">Ofertas!</h2>
             <div class="container-notebooks-index">
                 <div class="item-gamer-img">
                 </div>
