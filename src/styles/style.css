@@ -170,6 +170,16 @@
 }
 
 /*main*/
+.marcas-section {
+    margin: 50px;
+    margin-top: 0px;
+}
+
+.best-marcas {
+    margin-left: 25px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px gainsboro;
+}
 
 .item-background-img {
     width: 100%;
