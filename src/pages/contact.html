@@ -71,20 +71,50 @@
         </nav>
     </header>
     <main>
-        <div class="container-form">
-            <div class="info-form">
-                <h2> Contactanos </h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptate sed temporibus, eos eaque ipsam impedit repellendus fuga doloremque distinctio vel voluptates odit cumque adipisci animi sunt suscipit nesciunt laborum? Porro, fuga. Voluptatibus sapiente ad error enim quis expedita qui veritatis ex perferendis, magnam repellendus totam exercitationem illum rerum temporibus.</p>
-                <a href="#"><i class="fa fa-phone"></i>44-4444-4444</a>
-                <a href="#"><i class="fa fa-envelope"></i>test@gpcomputación.com.ar</a>
-                <a href="#"><i class="fa fa-map-marked"></i>Buenos aires, Argentina</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h4>Deja tu Mensaje</h4>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresa tu Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingresa tu Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Numero Telefonico</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingresa tu Telefono">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button class="btn btn-primary btn-formulario">Enviar</button>
+                </div>
+                <div class="col-md-5 ">
+                    <h4>Contactanos</h4><hr>
+                    <div class="mt-4">
+                        <div class="d-flex">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <p >Direccion: 424 Ignacio Arieta, San Justo</p>
+                        </div><hr>
+                        <div class="d-flex">
+                            <i class="bi bi-telephone-fill"></i>
+                            <p>Telefono : 44-4444-4444</p>
+                        </div><hr>
+                        <div class="d-flex">
+                            <i class="bi bi-envelope-fill"></i>
+                            <p>Email: contacto@gpcomputacion.com</p>
+                        </div><hr>
+                        <div class="d-flex">
+                            <i class="bi bi-browser-chrome"></i>
+                            <p>Website: www.gp-computacion.com</p>
+                        </div><hr>
+                    </div>
+                </div>
             </div>
-            <form action="#" autocomplete="off">
-                <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo">
-                <input type="email" name="email" placeholder="Ingresa tu correo" class="campo">
-                <textarea name="mensaje" placeholder="Ingresa tu mensaje"></textarea>
-                <input type="submit" name="enviar" value="Enviar mensaje" class="boton-enviar">
-            </form>
         </div>
     </main>
     <footer>
