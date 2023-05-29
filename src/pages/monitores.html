@@ -14,18 +14,18 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-black">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row contenedor-hamburger">
                     <div class="col">
                         <a class="navbar-brand logo-web" href="#">GP Computación</a>
                     </div>
-                    <div class="col text-end">
+                    <div class="col boton-hamburgesa">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
                     </div>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
                         </li>
@@ -39,7 +39,7 @@
                             <a class="nav-link dropdown-toggle menu-desplegable" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Componentes
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" style="width: 200px;">
                                 <li><a class="dropdown-item" href="./monitores.html">Monitores</a></li>
                                 <li><a class="dropdown-item" href="./gpus.html">Placas de Video</a></li>
                             </ul>
@@ -48,18 +48,25 @@
                             <a class="nav-link" href="./contact.html">Contacto</a>
                         </li>    
                     </ul>
-                <form class="d-flex mx-auto buscador" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-search btn-outline-success" type="submit">
-                    <i class="fas fa-search"></i>
-                    </button>
-                </form>
-            </div>
-            <a class="login" href="#">
-                <i class="fas fa-user"></i>
-            </a>
-            <div class="carrito">
-                <i class="fa fa-shopping-cart fa-lg"></i>
+                    <form class="d-flex mx-auto buscador" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-search btn-outline-success" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <div class="login">
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                            <span class="d-lg-none texto-iconos">Ingresar</span>
+                        </a>
+                    </div>
+                    <div class="carrito">
+                        <a href="#">
+                            <i class="fa fa-shopping-cart fa-lg"></i>
+                            <span class="d-lg-none texto-iconos">Carrito de Compras</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header> 
