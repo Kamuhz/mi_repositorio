@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@400;700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
-/* NAV BAR */
-.logo-web {
-  font-size: 30px;
-  padding: 10px;
-}
-
-.navbar {
+header .navbar {
   border: solid 4px;
   border-image-slice: 1;
   border-top: 0;
@@ -14,43 +8,49 @@
   border-right: 0;
   border-image-source: linear-gradient(to left, #8cc800, #59ffe3);
 }
-
-.nav-link {
+header .container-fluid .row .col .logo-web {
+  font-size: 30px;
+  padding: 10px;
+}
+header .container-fluid .collapse .navbar-nav .nav-item .nav-link {
   color: #fff;
 }
-
-.menu-desplegable {
-  color: #fff;
-}
-
-.menu-desplegable:hover {
+header .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
   opacity: 0.7;
 }
-
-/*carrito*/
-.carrito {
-  font-size: 16px;
+header .container-fluid .collapse .navbar-nav .menu-desplegable {
+  color: #fff;
+}
+header .container-fluid .collapse .navbar-nav .menu-desplegable:hover {
+  opacity: 0.7;
+}
+header .container-fluid .collapse .buscador {
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  width: 650px;
+}
+header .container-fluid .collapse .buscador input[type=search] {
+  flex-grow: 1;
+}
+header .container-fluid .collapse .buscador .btn-search {
+  margin-left: 10px;
   color: #fff;
+  border: none;
+  border: 1px solid #fff;
+  opacity: 1;
 }
-
-.carrito i {
-  color: #fff;
+header .container-fluid .collapse .buscador .btn-search:hover {
+  background-color: transparent;
+  opacity: 0.9;
+  border-color: #fff;
 }
-
-.carrito {
-  transition: transform 0.2s ease-in-out;
+header .container-fluid .collapse .buscador .btn-search:active, header .container-fluid .collapse .buscador .btn-search:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: transparent !important;
+  border-color: #fff !important;
 }
-
-.carrito:hover {
-  transform: scale(1.2);
-  cursor: pointer;
-}
-
-/* login */
-.login {
+header .container-fluid .collapse .login {
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -59,55 +59,34 @@
   text-decoration: none;
   transition: transform 0.2s ease-in-out;
 }
-
-.login i {
-  color: #fff;
-}
-
-.login a, .carrito a {
-  text-decoration: none;
-}
-
-.login:hover {
+header .container-fluid .collapse .login:hover {
   transform: scale(1.2);
   cursor: pointer;
   color: #fff;
 }
-
-/* Barra - Buscador*/
-.buscador {
+header .container-fluid .collapse .login i {
+  color: #fff;
+}
+header .container-fluid .collapse .login a {
+  text-decoration: none;
+}
+header .container-fluid .collapse .carrito {
+  font-size: 16px;
   display: flex;
   align-items: center;
-  width: 650px;
-}
-
-.buscador input[type=search] {
-  flex-grow: 1;
-}
-
-.buscador .btn-search {
-  margin-left: 10px;
-}
-
-/* Boton de Buscar (lupa) */
-.btn-search {
+  margin-right: 20px;
   color: #fff;
-  border: none;
-  border: 1px solid #fff;
-  opacity: 1;
+  transition: transform 0.2s ease-in-out;
 }
-
-.btn-search:hover {
-  background-color: transparent;
-  opacity: 0.9;
-  border-color: #fff;
+header .container-fluid .collapse .carrito:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
-
-.btn-search:active, .btn-search:focus {
-  outline: none;
-  box-shadow: none;
-  background-color: transparent !important;
-  border-color: #fff !important;
+header .container-fluid .collapse .carrito i {
+  color: #fff;
+}
+header .container-fluid .collapse .carrito a {
+  text-decoration: none;
 }
 
 /*slider animacion*/
