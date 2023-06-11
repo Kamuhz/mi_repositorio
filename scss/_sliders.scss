@@ -1,27 +1,21 @@
-/*slider animacion*/
-
 .slider-frame {
     width: auto;
     height: auto;
     margin: 50 auto 0;
     overflow: hidden;
-}
-
-.slider-frame ul {
-    display: flex;
-    padding: 0;
-    width: 300%;
-    
-    animation: slide 12s infinite alternate ease-in-out;
-}
-
-.slider-frame li {
-    list-style: none;
-    width: 100%;
-}
-
-.slider-frame img {
-    width: 100%;
+    ul {
+        display: flex;
+        padding: 0;
+        width: 300%;
+        animation: slide 12s infinite alternate ease-in-out;
+        li {
+            list-style: none;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @keyframes slide {

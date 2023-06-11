@@ -89,27 +89,23 @@ header .container-fluid .collapse .carrito a {
   text-decoration: none;
 }
 
-/*slider animacion*/
 .slider-frame {
   width: auto;
   height: auto;
   margin: 50 auto 0;
   overflow: hidden;
 }
-
 .slider-frame ul {
   display: flex;
   padding: 0;
   width: 300%;
   animation: slide 12s infinite alternate ease-in-out;
 }
-
-.slider-frame li {
+.slider-frame ul li {
   list-style: none;
   width: 100%;
 }
-
-.slider-frame img {
+.slider-frame ul li img {
   width: 100%;
 }
 
@@ -133,85 +129,84 @@ header .container-fluid .collapse .carrito a {
     margin-left: -200%;
   }
 }
-/*main*/
-.marcas-section {
+main .marcas-section {
   margin: 50px;
   margin-top: 0px;
 }
-
-.best-marcas {
+main .marcas-section .best-marcas {
   margin-left: 25px;
   padding-bottom: 10px;
   border-bottom: solid 1px gainsboro;
 }
-
-.item-background-img {
-  width: 100%;
-  height: 405px;
-}
-
-.info-notebook {
+main .marcas-section .best-marcas .carouselexamplecontrols .carousel-inner .carousel-item .card .card-body .card-title {
   display: flex;
-  font-size: 14px;
-  width: 80%;
-  justify-content: flex-start;
-  line-height: 1.5;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 800;
 }
-
-.item-notebook-img {
-  display: flex;
-  width: 284px;
-  height: 415px;
-  background-image: url(../../public/images/notebooks.png);
-}
-
-.item-pccompleta-img {
-  display: flex;
-  width: 284px;
-  height: 415px;
-  background-image: url(../../public/images/pccompletas.png);
-}
-
-.item-gamer-img {
-  display: flex;
-  width: 284px;
-  height: 415px;
-  background-image: url(../../public/images/gamer.png);
-}
-
-.links {
-  text-decoration: none;
-  font-size: 12px;
-  color: #B2DB8A;
-  padding: 13px 20px;
-}
-
-.titles-products {
+main .titles-products {
   display: flex;
   padding: 15px 15px;
   margin-left: 60px;
   font-size: 30px;
 }
-
-.img-notebook img {
-  height: 250px;
+main .links {
+  text-decoration: none;
+  font-size: 12px;
+  color: #B2DB8A;
+  padding: 13px 20px;
 }
-
-.item-notebook {
+main .links:hover {
+  color: #0a070a;
+}
+main .container-notebooks-index {
+  display: flex;
+  margin: 20px 50px;
+  background-color: #f2f2f2;
+}
+main .container-notebooks-index .item-gamer-img {
+  display: flex;
+  width: 284px;
+  height: 415px;
+  background-image: url(../../public/images/gamer.png);
+}
+main .container-notebooks-index .item-pccompleta-img {
+  display: flex;
+  width: 284px;
+  height: 415px;
+  background-image: url(../../public/images/pccompletas.png);
+}
+main .container-notebooks-index .item-notebook-img {
+  display: flex;
+  width: 284px;
+  height: 415px;
+  background-image: url(../../public/images/notebooks.png);
+}
+main .container-notebooks-index .item-notebook {
   display: grid;
   grid-template-columns: repeat(4 1fr);
   align-items: center;
   justify-content: center;
   padding: 20px 25px;
 }
-
-.container-notebooks-index {
-  display: flex;
-  margin: 20px 50px;
-  background-color: #f2f2f2;
+main .container-notebooks-index .item-notebook .info-container-notebook {
+  display: grid;
+  line-height: 1.5;
+  padding: 5px 5px;
 }
-
-.btn-product {
+main .container-notebooks-index .item-notebook .info-container-notebook .info-notebook {
+  display: flex;
+  font-size: 14px;
+  width: 80%;
+  justify-content: flex-start;
+  line-height: 1.5;
+}
+main .container-notebooks-index .item-notebook .info-container-notebook .precio {
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 900;
+}
+main .container-notebooks-index .item-notebook .info-container-notebook .btn-product {
   border: none;
   background: none;
   background-color: black;
@@ -220,83 +215,10 @@ header .container-fluid .collapse .carrito a {
   cursor: pointer;
   font-size: 10px;
 }
-.btn-product:hover {
+main .container-notebooks-index .item-notebook .info-container-notebook .btn-product:hover {
   background-color: #8ea55a;
 }
-
-.precio {
-  font-size: 15px;
-  line-height: 2;
-  font-weight: 900;
-}
-
-.info-container-notebook {
-  display: grid;
-  line-height: 1.5;
-  padding: 5px 5px;
-}
-
-/*marcas*/
-.title-marcas {
-  display: flex;
-  padding: 15px;
-  justify-content: flex-start;
-  font-size: 25px;
-  margin-left: 185px;
-  color: black;
-  opacity: 0.8;
-}
-
-.container-marcas {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  place-items: center;
-  border: 0.5px solid gainsboro;
-  border-bottom: 0;
-  border-right: 0;
-  border-left: 0;
-  width: 75%;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  padding-top: 20px;
-}
-
-.item-marcas {
-  border-radius: 10px;
-  width: 220px;
-}
-
-.item-marcas:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.marca {
-  padding: 15px 30px;
-  line-height: 1.5;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  font-size: 20px;
-  color: grey;
-}
-
-.logo-marca img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  transition: all 0.5s;
-  border-radius: 10px;
-}
-
-.card-title {
-  display: flex;
-  justify-content: center;
-  font-size: 20px;
-  font-weight: 800;
-}
-
-/*cards*/
-.contenedor-item {
+main .contenedor-item {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 80px;
@@ -304,37 +226,37 @@ header .container-fluid .collapse .carrito a {
   margin: 0 auto;
   margin-bottom: 35px;
 }
-.contenedor-item .item {
+main .contenedor-item .item {
   border-radius: 10px;
 }
-.contenedor-item .item:hover {
+main .contenedor-item .item:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.contenedor-item .item img {
+main .contenedor-item .item img {
   width: 100%;
   height: 300px;
   object-fit: none;
   transition: all 0.5s;
   transform: scale(0.8);
 }
-.contenedor-item .item img:hover {
+main .contenedor-item .item img:hover {
   transform: scale(1);
 }
-.contenedor-item .item figure {
+main .contenedor-item .item figure {
   overflow: hidden;
 }
-.contenedor-item .info-product {
+main .contenedor-item .info-product {
   padding: 15px 30px;
   line-height: 1.5;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.contenedor-item .info-product .price {
+main .contenedor-item .info-product .price {
   font-size: 40px;
   font-weight: 900;
 }
-.contenedor-item .info-product button {
+main .contenedor-item .info-product button {
   border: none;
   background: none;
   background-color: black;
@@ -343,47 +265,44 @@ header .container-fluid .collapse .carrito a {
   cursor: pointer;
   font-size: 20px;
 }
-.contenedor-item .info-product button:hover {
+main .contenedor-item .info-product button:hover {
   background-color: #8ea55a;
 }
-
-/*banner*/
-.banner {
+main .banner {
   display: flex;
   justify-content: center;
   margin: 20px 20px;
 }
-.banner img {
+main .banner img {
   width: 78%;
 }
-
-.container {
+main .container {
   padding: 45px;
 }
-.container .row {
+main .container .row {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-.container .row .col-md-7 {
+main .container .row .col-md-7 {
   padding: 20px;
 }
-.container .row .col-md-7 .btn-formulario {
+main .container .row .col-md-7 .btn-formulario {
   background-color: black;
   border: none;
 }
-.container .row .col-md-7 .btn-formulario:hover {
+main .container .row .col-md-7 .btn-formulario:hover {
   background-color: #42b881;
 }
-.container .row .col-md-5 {
+main .container .row .col-md-5 {
   background: black;
   padding: 20px;
   color: white;
 }
-.container .row .col-md-5 .mt-4 .d-flex p {
+main .container .row .col-md-5 .mt-4 .d-flex p {
   font-size: 18px;
   padding-left: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.container .row .col-md-5 .mt-4 .d-flex p .bi {
+main .container .row .col-md-5 .mt-4 .d-flex p .bi {
   font-size: 20px;
 }
 
@@ -537,18 +456,17 @@ footer .copyright-container .copyright {
     max-width: 250px;
     margin-bottom: 4px;
   }
-  .carrito:hover {
-    transform: scale(1);
-    cursor: pointer;
-  }
-  .login:hover {
-    transform: scale(1);
-  }
   .navbar-toggler {
     margin-left: auto;
   }
+  .login:hover {
+    transform: scale(1) !important;
+  }
   .carrito {
-    font-size: 14px;
+    font-size: 13px !important;
+  }
+  .carrito:hover {
+    transform: scale(1) !important;
   }
   .boton-hamburgesa {
     display: flex;
@@ -588,9 +506,10 @@ footer .copyright-container .copyright {
     justify-content: center;
     padding: 7px;
     border-bottom: solid 1px gainsboro;
+    margin-left: 0px;
   }
   .slider-frame img {
-    height: 150px;
+    height: 140px;
   }
 }
 /* Estilos Globales */
