@@ -87,15 +87,15 @@
     }
 
     .item-notebook-img {
-        display: none;
+        display: none !important;
     }
 
     .item-pccompleta-img {
-        display: none;
+        display: none !important;
     }
 
     .item-gamer-img {
-        display: none;
+        display: none !important;
     }
 
     .marcas-section {
@@ -114,6 +114,8 @@
     .slider-frame img {
         height: 140px;
     }
-    
 
+    .contenedor-item {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
 }
