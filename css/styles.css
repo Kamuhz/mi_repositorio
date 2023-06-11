@@ -220,6 +220,9 @@ header .container-fluid .collapse .carrito a {
   cursor: pointer;
   font-size: 10px;
 }
+.btn-product:hover {
+  background-color: #8ea55a;
+}
 
 .precio {
   font-size: 15px;
@@ -301,45 +304,37 @@ header .container-fluid .collapse .carrito a {
   margin: 0 auto;
   margin-bottom: 35px;
 }
-
-.item {
+.contenedor-item .item {
   border-radius: 10px;
 }
-
-.item:hover {
+.contenedor-item .item:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
-.info-product {
-  padding: 15px 30px;
-  line-height: 1.5;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.item img {
+.contenedor-item .item img {
   width: 100%;
   height: 300px;
   object-fit: none;
   transition: all 0.5s;
   transform: scale(0.8);
 }
-
-.item figure {
-  overflow: hidden;
-}
-
-.item:hover img {
+.contenedor-item .item img:hover {
   transform: scale(1);
 }
-
-.price {
+.contenedor-item .item figure {
+  overflow: hidden;
+}
+.contenedor-item .info-product {
+  padding: 15px 30px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contenedor-item .info-product .price {
   font-size: 40px;
   font-weight: 900;
 }
-
-.info-product button {
+.contenedor-item .info-product button {
   border: none;
   background: none;
   background-color: black;
@@ -348,18 +343,8 @@ header .container-fluid .collapse .carrito a {
   cursor: pointer;
   font-size: 20px;
 }
-
-/*Productos index - notebook*/
-.notebooks {
-  display: grid;
-  grid-template-columns: repeat(5 1fr);
-  justify-content: center;
-  align-items: center;
-}
-
-.fondo-notebook {
-  background-image: url(../../public/images/notebooks.png);
-  width: 100%;
+.contenedor-item .info-product button:hover {
+  background-color: #8ea55a;
 }
 
 /*banner*/
@@ -368,47 +353,38 @@ header .container-fluid .collapse .carrito a {
   justify-content: center;
   margin: 20px 20px;
 }
-
 .banner img {
   width: 78%;
 }
 
-/*contacto*/
 .container {
   padding: 45px;
 }
-
-.row {
+.container .row {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-
-.col-md-7 {
+.container .row .col-md-7 {
   padding: 20px;
 }
-
-.col-md-5 {
+.container .row .col-md-7 .btn-formulario {
+  background-color: black;
+  border: none;
+}
+.container .row .col-md-7 .btn-formulario:hover {
+  background-color: #42b881;
+}
+.container .row .col-md-5 {
   background: black;
   padding: 20px;
   color: white;
 }
-
-.btn-formulario {
-  background-color: black;
-  border: none;
-}
-
-.btn-formulario:hover {
-  background-color: #42b881;
-}
-
-.bi {
-  font-size: 20px;
-}
-
-.d-flex p {
+.container .row .col-md-5 .mt-4 .d-flex p {
   font-size: 18px;
   padding-left: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container .row .col-md-5 .mt-4 .d-flex p .bi {
+  font-size: 20px;
 }
 
 footer {

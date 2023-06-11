@@ -84,6 +84,9 @@
     padding: 5px 10px;
     cursor: pointer;
     font-size: 10px;
+    &:hover {
+        background-color: $botonhover;
+    }
 }
 
 .precio {
@@ -165,67 +168,48 @@
     width: 75%;
     margin: 0 auto;
     margin-bottom: 35px;
-}
-
-.item {
-    border-radius: 10px;
-}
-
-.item:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-}
-
-.info-product {
-    padding: 15px 30px;
-    line-height: 1.5;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.item img {
-    width: 100%;
-    height: 300px;
-    object-fit: none;
-    transition: all .5s;
-    transform: scale(0.8);
-}
-
-.item figure {
-    overflow: hidden;
-}
-
-.item:hover img {
-    transform: scale(1.0);
-}
-
-.price {
-    font-size: 40px;
-    font-weight: 900;
-}
-
-.info-product button {
-    border: none;
-    background: none;
-    background-color: black;
-    color: white;
-    padding: 20px 10px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-/*Productos index - notebook*/
-
-.notebooks {
-    display: grid;
-    grid-template-columns: repeat(5 1fr);
-    justify-content: center;
-    align-items: center;
-}
-
-.fondo-notebook {
-    background-image: url(../../public/images/notebooks.png);
-    width: 100%;
+    .item {
+        border-radius: 10px;
+        &:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+        }
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: none;
+            transition: all .5s;
+            transform: scale(0.8);
+            &:hover {
+                transform: scale(1.0);
+            }
+        }
+        figure {
+            overflow: hidden;
+        }
+    }
+    .info-product {
+        padding: 15px 30px;
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .price {
+            font-size: 40px;
+            font-weight: 900;
+        }
+        button {
+            border: none;
+            background: none;
+            background-color: black;
+            color: white;
+            padding: 20px 10px;
+            cursor: pointer;
+            font-size: 20px;
+            &:hover {
+                background-color: $botonhover;
+            }
+        }
+    }
 }
 
 /*banner*/
@@ -234,45 +218,7 @@
     display: flex;
     justify-content: center;
     margin: 20px 20px;
-}
-
-.banner img {
-    width: 78%;
-}
-
-/*contacto*/
-.container{
-    padding: 45px;
-}
-
-.row{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-   
-}
-.col-md-7{
-    padding: 20px;
-}
-.col-md-5 {
-    background: black;
-    padding: 20px;
-    color: white;
-}
-
-.btn-formulario {
-    background-color: black;
-    border: none;
-}
-
-.btn-formulario:hover {
-    background-color: #42b881;
-}
-
-
-.bi{
-    font-size: 20px;
-}
-.d-flex p{
-    font-size: 18px;
-    padding-left: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    img {
+        width: 78%;
+    }
 }
