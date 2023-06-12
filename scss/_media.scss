@@ -1,11 +1,25 @@
 @media screen and (min-width: 576px) {
-    .carousel-inner {
-        display: flex;
-        .carousel-item {
-            display: block;
-            margin-right: 0;
-            flex: 0 0 calc(100%/5);
-            padding: 5px;
+    main {
+        section {
+            .banners {
+                .imagen1 {
+                    width: 100%;
+                }
+                .imagen2 {
+                    display: none;
+                }
+            }
+        }
+        .marcas-section {
+            .carousel-inner {
+                display: flex;
+                .carousel-item {
+                    display: block;
+                    margin-right: 0;
+                    flex: 0 0 calc(100%/5);
+                    padding: 5px;
+                }
+            }
         }
     }
 }
@@ -15,6 +29,7 @@
         .navbar {
             .container-fluid {
                 .collapse {
+                    Overflow-x:hidden;
                     .buscador {
                         flex-direction: row;
                         align-items: flex-start;

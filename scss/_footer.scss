@@ -7,7 +7,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: black;
+    background-color: $color-principal;
     color: white;
     border: solid 4px;
     border-image-slice: 1;
@@ -29,6 +29,7 @@ footer {
             justify-content: flex-start;
             align-items: flex-start;
             flex-direction: column;
+            padding: 10px;
             .website-logo {
                 margin-bottom: 1.2rem;
                 font-size: calc(1vw + 20px);
