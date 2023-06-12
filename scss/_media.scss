@@ -28,8 +28,28 @@
     header {
         .navbar {
             .container-fluid {
+                .row {
+                    .col {
+                        .logo-web {
+                            font-size: 35px;
+                        }
+                    }
+                }
                 .collapse {
                     Overflow-x:hidden;
+                    .navbar-nav {
+                        .nav-item {
+                            .show {
+                                a {
+                                    font-size: 20px;
+                                }
+                            }
+                            .nav-link {
+                                font-size: 20px;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
                     .buscador {
                         flex-direction: row;
                         align-items: flex-start;
@@ -40,14 +60,18 @@
                         }
                     }
                     .login, .carrito {
+                        padding: 5px;
                         &:hover {
                             transform: scale(1);
                         }
                         .texto-iconos {
                             color: #fff;
                             text-decoration: none;
-                            font-size: 15px;
+                            font-size: 16px;
                         }
+                    }
+                    .login {
+                        margin-left: 3px;
                     }
                 }
                 .row {

@@ -456,8 +456,18 @@ footer .copyright-container .copyright {
   }
 }
 @media (max-width: 480px) {
+  header .navbar .container-fluid .row .col .logo-web {
+    font-size: 35px;
+  }
   header .navbar .container-fluid .collapse {
     Overflow-x: hidden;
+  }
+  header .navbar .container-fluid .collapse .navbar-nav .nav-item .show a {
+    font-size: 20px;
+  }
+  header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+    font-size: 20px;
+    margin-left: 10px;
   }
   header .navbar .container-fluid .collapse .buscador {
     flex-direction: row;
@@ -468,13 +478,19 @@ footer .copyright-container .copyright {
     max-width: 250px;
     margin-bottom: 4px;
   }
+  header .navbar .container-fluid .collapse .login, header .navbar .container-fluid .collapse .carrito {
+    padding: 5px;
+  }
   header .navbar .container-fluid .collapse .login:hover, header .navbar .container-fluid .collapse .carrito:hover {
     transform: scale(1);
   }
   header .navbar .container-fluid .collapse .login .texto-iconos, header .navbar .container-fluid .collapse .carrito .texto-iconos {
     color: #fff;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
+  }
+  header .navbar .container-fluid .collapse .login {
+    margin-left: 3px;
   }
   header .navbar .container-fluid .row .boton-hamburgesa {
     display: flex;
