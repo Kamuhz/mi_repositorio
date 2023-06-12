@@ -1,121 +1,106 @@
-/*queries*/
-
 @media screen and (min-width: 576px) {
     .carousel-inner {
         display: flex;
-    }
-    .carousel-item {
-        display: block;
-        margin-right: 0;
-        flex: 0 0 calc(100%/5);
-        padding: 5px;
+        .carousel-item {
+            display: block;
+            margin-right: 0;
+            flex: 0 0 calc(100%/5);
+            padding: 5px;
+        }
     }
 }
 
-/* media queries*/
-
 @media (max-width: 480px) {
-    .search-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: auto;
-    }
-    .icons-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-top: 10px;
-    }
-    .texto-iconos {
-        color: #fff;
-        text-decoration: none;
-        font-size: 15px;
-    }
-
-    .buscador {
-        flex-direction: row;
-        align-items: flex-start;
-        input[type="search"] {
-            width: 100%;
-            max-width: 250px;
-            margin-bottom: 4px;
+    header {
+        .navbar {
+            .container-fluid {
+                .collapse {
+                    .buscador {
+                        flex-direction: row;
+                        align-items: flex-start;
+                        input[type="search"] {
+                            width: 100%;
+                            max-width: 250px;
+                            margin-bottom: 4px;
+                        }
+                    }
+                    .login, .carrito {
+                        &:hover {
+                            transform: scale(1);
+                        }
+                        .texto-iconos {
+                            color: #fff;
+                            text-decoration: none;
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .row {
+                    .boton-hamburgesa {
+                        display: flex;
+                        position: absolute;
+                        .navbar-toggler {
+                            margin-left: auto;
+                        }
+                    }
+                }
+            }
         }
-    }
-
-    .navbar-toggler {
-        margin-left: auto;
-    }
-
-    .login {
-        &:hover {
-            transform: scale(1) !important;
-        }
-    }
-
-    .carrito {
-        font-size: 13px !important;
-        &:hover {
-            transform: scale(1) !important;
-        }
-    }
-
-    .boton-hamburgesa {
-        display: flex;
-        position: absolute;
-    }
-
-    .footer-container {
-        font-size: 13px;
-    }
-
-    .menu-item-footer {
-        padding-right: 15px;
-    }
-
-    .footer-img {
-        display: flex;
-        margin: 25px;
-    }
-
-    .container-notebooks-index {
-        flex-direction: column;
-    }
-
-    .item-notebook {
-        border: solid 1px gainsboro;
-    }
-
-    .item-notebook-img {
-        display: none !important;
-    }
-
-    .item-pccompleta-img {
-        display: none !important;
-    }
-
-    .item-gamer-img {
-        display: none !important;
-    }
-
-    .marcas-section {
-        display: grid;
-        justify-content: center;
-    }
-
-    .best-marcas {
-        display: flex;
-        justify-content: center;
-        padding: 7px;
-        border-bottom: solid 1px gainsboro;
-        margin-left: 0px;
     }
 
     .slider-frame img {
         height: 140px;
     }
 
-    .contenedor-item {
-        grid-template-columns: repeat(1, 1fr) !important;
+    main {
+        section {
+            .contenedor-item {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        .marcas-section {
+            display: grid;
+            justify-content: center;
+            .best-marcas {
+                display: flex;
+                justify-content: center;
+                padding: 7px;
+                border-bottom: solid 1px gainsboro;
+                margin-left: 0px;
+                font-size: 32px;
+            }
+        }
+        .container-notebooks-index {
+            flex-direction: column;
+            .item-notebook-img {
+                display: none;
+            }
+            .item-notebook {
+                border: solid 1px gainsboro;
+            }
+            .item-pccompleta-img {
+                display: none;
+            }
+            .item-gamer-img {
+                display: none;
+            }
+        }
+    }
+
+    footer {
+        .footer-container {
+            font-size: 13px;
+            .foooter-menus {
+                .footer-content-container {
+                    .footer-img {
+                        display: flex;
+                        margin: 25px;
+                    }
+                    .menu-item-footer {
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
     }
 }

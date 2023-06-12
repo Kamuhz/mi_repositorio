@@ -8,49 +8,49 @@ header .navbar {
   border-right: 0;
   border-image-source: linear-gradient(to left, #8cc800, #59ffe3);
 }
-header .container-fluid .row .col .logo-web {
+header .navbar .container-fluid .row .col .logo-web {
   font-size: 30px;
   padding: 10px;
 }
-header .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
   color: #fff;
 }
-header .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
   opacity: 0.7;
 }
-header .container-fluid .collapse .navbar-nav .menu-desplegable {
+header .navbar .container-fluid .collapse .navbar-nav .menu-desplegable {
   color: #fff;
 }
-header .container-fluid .collapse .navbar-nav .menu-desplegable:hover {
+header .navbar .container-fluid .collapse .navbar-nav .menu-desplegable:hover {
   opacity: 0.7;
 }
-header .container-fluid .collapse .buscador {
+header .navbar .container-fluid .collapse .buscador {
   display: flex;
   align-items: center;
   width: 650px;
 }
-header .container-fluid .collapse .buscador input[type=search] {
+header .navbar .container-fluid .collapse .buscador input[type=search] {
   flex-grow: 1;
 }
-header .container-fluid .collapse .buscador .btn-search {
+header .navbar .container-fluid .collapse .buscador .btn-search {
   margin-left: 10px;
   color: #fff;
   border: none;
   border: 1px solid #fff;
   opacity: 1;
 }
-header .container-fluid .collapse .buscador .btn-search:hover {
+header .navbar .container-fluid .collapse .buscador .btn-search:hover {
   background-color: transparent;
   opacity: 0.9;
   border-color: #fff;
 }
-header .container-fluid .collapse .buscador .btn-search:active, header .container-fluid .collapse .buscador .btn-search:focus {
+header .navbar .container-fluid .collapse .buscador .btn-search:active, header .navbar .container-fluid .collapse .buscador .btn-search:focus {
   outline: none;
   box-shadow: none;
   background-color: transparent !important;
   border-color: #fff !important;
 }
-header .container-fluid .collapse .login {
+header .navbar .container-fluid .collapse .login {
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -59,18 +59,18 @@ header .container-fluid .collapse .login {
   text-decoration: none;
   transition: transform 0.2s ease-in-out;
 }
-header .container-fluid .collapse .login:hover {
+header .navbar .container-fluid .collapse .login:hover {
   transform: scale(1.2);
   cursor: pointer;
   color: #fff;
 }
-header .container-fluid .collapse .login i {
+header .navbar .container-fluid .collapse .login i {
   color: #fff;
 }
-header .container-fluid .collapse .login a {
+header .navbar .container-fluid .collapse .login a {
   text-decoration: none;
 }
-header .container-fluid .collapse .carrito {
+header .navbar .container-fluid .collapse .carrito {
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -78,14 +78,14 @@ header .container-fluid .collapse .carrito {
   color: #fff;
   transition: transform 0.2s ease-in-out;
 }
-header .container-fluid .collapse .carrito:hover {
+header .navbar .container-fluid .collapse .carrito:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
-header .container-fluid .collapse .carrito i {
+header .navbar .container-fluid .collapse .carrito i {
   color: #fff;
 }
-header .container-fluid .collapse .carrito a {
+header .navbar .container-fluid .collapse .carrito a {
   text-decoration: none;
 }
 
@@ -134,9 +134,11 @@ main .marcas-section {
   margin-top: 0px;
 }
 main .marcas-section .best-marcas {
-  margin-left: 25px;
+  font-size: 30px;
+  margin: 5px 15px;
   padding-bottom: 10px;
   border-bottom: solid 1px gainsboro;
+  font-weight: 900;
 }
 main .marcas-section .carousel .carousel-inner .carousel-item .card .card-body p {
   display: flex;
@@ -386,7 +388,7 @@ footer .footer-container .footer-content-container .social-container {
 footer .footer-container .footer-content-container .social-container .social-link {
   height: 100%;
   width: 30px;
-  background-image: url(../../public/images/FacebookBlanco.png);
+  background-image: url(../public/images/FacebookBlanco.png);
   background-size: 70%;
   background-position: center;
   margin-right: 1rem;
@@ -396,10 +398,10 @@ footer .footer-container .footer-content-container .social-container .social-lin
   opacity: 0.7;
 }
 footer .footer-container .footer-content-container .social-container .social-link:nth-of-type(2) {
-  background-image: url(../../public/images/InstagramBlanco.png);
+  background-image: url(../public/images/InstagramBlanco.png);
 }
 footer .footer-container .footer-content-container .social-container .social-link:nth-of-type(3) {
-  background-image: url(../../public/images/TwitterBlanco.png);
+  background-image: url(../public/images/TwitterBlanco.png);
 }
 footer .footer-container .footer-menus {
   display: flex;
@@ -421,103 +423,84 @@ footer .copyright-container .copyright {
   padding: 10px 0;
 }
 
-/*queries*/
 @media screen and (min-width: 576px) {
   .carousel-inner {
     display: flex;
   }
-  .carousel-item {
+  .carousel-inner .carousel-item {
     display: block;
     margin-right: 0;
     flex: 0 0 20%;
     padding: 5px;
   }
 }
-/* media queries*/
 @media (max-width: 480px) {
-  .search-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: auto;
-  }
-  .icons-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 10px;
-  }
-  .texto-iconos {
-    color: #fff;
-    text-decoration: none;
-    font-size: 15px;
-  }
-  .buscador {
+  header .navbar .container-fluid .collapse .buscador {
     flex-direction: row;
     align-items: flex-start;
   }
-  .buscador input[type=search] {
+  header .navbar .container-fluid .collapse .buscador input[type=search] {
     width: 100%;
     max-width: 250px;
     margin-bottom: 4px;
   }
-  .navbar-toggler {
-    margin-left: auto;
+  header .navbar .container-fluid .collapse .login:hover, header .navbar .container-fluid .collapse .carrito:hover {
+    transform: scale(1);
   }
-  .login:hover {
-    transform: scale(1) !important;
+  header .navbar .container-fluid .collapse .login .texto-iconos, header .navbar .container-fluid .collapse .carrito .texto-iconos {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
   }
-  .carrito {
-    font-size: 13px !important;
-  }
-  .carrito:hover {
-    transform: scale(1) !important;
-  }
-  .boton-hamburgesa {
+  header .navbar .container-fluid .row .boton-hamburgesa {
     display: flex;
     position: absolute;
   }
-  .footer-container {
-    font-size: 13px;
+  header .navbar .container-fluid .row .boton-hamburgesa .navbar-toggler {
+    margin-left: auto;
   }
-  .menu-item-footer {
-    padding-right: 15px;
+  .slider-frame img {
+    height: 140px;
   }
-  .footer-img {
-    display: flex;
-    margin: 25px;
+  main section .contenedor-item {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .container-notebooks-index {
-    flex-direction: column;
-  }
-  .item-notebook {
-    border: solid 1px gainsboro;
-  }
-  .item-notebook-img {
-    display: none !important;
-  }
-  .item-pccompleta-img {
-    display: none !important;
-  }
-  .item-gamer-img {
-    display: none !important;
-  }
-  .marcas-section {
+  main .marcas-section {
     display: grid;
     justify-content: center;
   }
-  .best-marcas {
+  main .marcas-section .best-marcas {
     display: flex;
     justify-content: center;
     padding: 7px;
     border-bottom: solid 1px gainsboro;
     margin-left: 0px;
+    font-size: 32px;
   }
-  .slider-frame img {
-    height: 140px;
+  main .container-notebooks-index {
+    flex-direction: column;
   }
-  .contenedor-item {
-    grid-template-columns: repeat(1, 1fr) !important;
+  main .container-notebooks-index .item-notebook-img {
+    display: none;
+  }
+  main .container-notebooks-index .item-notebook {
+    border: solid 1px gainsboro;
+  }
+  main .container-notebooks-index .item-pccompleta-img {
+    display: none;
+  }
+  main .container-notebooks-index .item-gamer-img {
+    display: none;
+  }
+  footer .footer-container {
+    font-size: 13px;
+  }
+  footer .footer-container .foooter-menus .footer-content-container .footer-img {
+    display: flex;
+    margin: 25px;
+  }
+  footer .footer-container .foooter-menus .footer-content-container .menu-item-footer {
+    padding-right: 15px;
   }
 }
 /* Estilos Globales */
