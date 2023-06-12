@@ -12,6 +12,9 @@ header .navbar .container-fluid .row .col .logo-web {
   font-size: 30px;
   padding: 10px;
 }
+header .navbar .container-fluid .collapse {
+  Overflow-x: hidden;
+}
 header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
   color: #fff;
 }
