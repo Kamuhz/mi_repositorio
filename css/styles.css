@@ -6,9 +6,10 @@ header {
 header .navbar {
   border: solid 4px;
   border-image-slice: 1;
-  border-top: 0;
   border-left: 0;
   border-right: 0;
+  border-bottom: 1;
+  border-top: 0;
   border-image-source: linear-gradient(to left, #8cc800, #59ffe3);
 }
 header .navbar .container-fluid .row .col .logo-web {
@@ -173,20 +174,20 @@ main .container-notebooks-index {
 }
 main .container-notebooks-index .item-gamer-img {
   display: flex;
-  width: 284px;
   height: 415px;
+  width: 284px;
   background-image: url(../public/images/gamer.png);
 }
 main .container-notebooks-index .item-pccompleta-img {
   display: flex;
-  width: 284px;
   height: 415px;
+  width: 284px;
   background-image: url(../public/images/pccompletas.png);
 }
 main .container-notebooks-index .item-notebook-img {
   display: flex;
-  width: 284px;
   height: 415px;
+  width: 284px;
   background-image: url(../public/images/notebooks.png);
 }
 main .container-notebooks-index .item-notebook {
@@ -242,8 +243,8 @@ main .contenedor-item .item:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 main .contenedor-item .item img {
+  height: 250px;
   width: 100%;
-  height: 300px;
   object-fit: none;
   transition: all 0.5s;
   transform: scale(0.8);
@@ -312,7 +313,6 @@ main .container .row .col-md-5 {
 main .container .row .col-md-5 .mt-4 .d-flex p {
   font-size: 18px;
   padding-left: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 main .container .row .col-md-5 .mt-4 .d-flex p .bi {
   font-size: 20px;
@@ -328,13 +328,14 @@ footer {
   align-items: center;
   flex-direction: column;
   background-color: black;
-  color: white;
   border: solid 4px;
   border-image-slice: 1;
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
+  border-top: 1;
   border-image-source: linear-gradient(to left, #8cc800, #59ffe3);
+  color: white;
 }
 footer .footer-container {
   height: fit-content;

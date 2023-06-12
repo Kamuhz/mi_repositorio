@@ -1,12 +1,7 @@
 header {
     background-color: $color-principal;
     .navbar {
-        border: solid 4px;
-        border-image-slice: 1;
-        border-top: 0;
-        border-left: 0;
-        border-right: 0;
-        border-image-source: linear-gradient(to left, #8cc800, #59ffe3);
+        @include borde-degradado(solid 4px, 1, 0, 0, 1, 0, linear-gradient(to left, #8cc800, #59ffe3));
         .container-fluid {
             .row {
                 .col {
@@ -22,7 +17,7 @@ header {
                     .nav-item {
                         .nav-link {
                             color: #fff;
-                            font-size: $letra-navbar;
+                            font-size: 16px;
                             &:hover {
                                 opacity: 0.7;
                             }

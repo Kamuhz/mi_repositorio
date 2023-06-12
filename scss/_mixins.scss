@@ -1,0 +1,14 @@
+@mixin size($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+
+@mixin borde-degradado($borde, $imageslice, $left, $right, $bottom, $top, $imgsource) {
+    border: $borde;
+    border-image-slice: $imageslice;
+    border-left: $left;
+    border-right: $right;
+    border-bottom: $bottom;
+    border-top: $top;
+    border-image-source: $imgsource;
+}
