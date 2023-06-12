@@ -92,7 +92,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        @include borde-degradado(solid 1px, 1, 0, 0, 0, 1, linear-gradient(to left, #8cc800, #59ffe3));
         .copyright {
             font-size: 12px;
             opacity: 0.7;

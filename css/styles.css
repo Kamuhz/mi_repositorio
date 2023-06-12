@@ -69,6 +69,7 @@ header .navbar .container-fluid .collapse .login:hover {
   transform: scale(1.2);
   cursor: pointer;
   color: #fff;
+  opacity: 0.9;
 }
 header .navbar .container-fluid .collapse .login i {
   color: #fff;
@@ -87,6 +88,7 @@ header .navbar .container-fluid .collapse .carrito {
 header .navbar .container-fluid .collapse .carrito:hover {
   transform: scale(1.2);
   cursor: pointer;
+  opacity: 0.9;
 }
 header .navbar .container-fluid .collapse .carrito i {
   color: #fff;
@@ -421,7 +423,13 @@ footer .copyright-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border: solid 1px;
+  border-image-slice: 1;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-top: 1;
+  border-image-source: linear-gradient(to left, #8cc800, #59ffe3);
 }
 footer .copyright-container .copyright {
   font-size: 12px;
