@@ -462,6 +462,12 @@ footer .copyright-container .copyright {
   .slider-frame img {
     height: 140px;
   }
+  main section .banners .imagen1 {
+    display: none;
+  }
+  main section .banners .imagen2 {
+    width: 100%;
+  }
   main section .contenedor-item {
     grid-template-columns: repeat(1, 1fr);
   }

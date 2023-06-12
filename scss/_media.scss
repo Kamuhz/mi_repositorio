@@ -54,6 +54,14 @@
 
     main {
         section {
+            .banners {
+                .imagen1 {
+                    display: none;
+                }
+                .imagen2 {
+                    width: 100%;
+                }
+            }
             .contenedor-item {
                 grid-template-columns: repeat(1, 1fr);
             }
