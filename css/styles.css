@@ -548,22 +548,22 @@ footer .copyright-container .copyright {
     padding-right: 15px;
   }
 }
-body {
+.pagina404fondo {
   background-color: gainsboro;
 }
-body section .titulo404 {
+.pagina404fondo section .titulo404 {
   display: flex;
   font-size: 30px;
   justify-content: center;
   margin-top: 50px;
 }
-body section .texto {
+.pagina404fondo section .texto {
   display: flex;
   justify-content: center;
   font-size: 15px;
   margin: 20px;
 }
-body section .numero {
+.pagina404fondo section .numero {
   display: flex;
   font-size: 350px;
   justify-content: center;
